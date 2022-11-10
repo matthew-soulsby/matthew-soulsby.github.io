@@ -1,8 +1,10 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import './App.css';
 import { IconSun, IconMoonStars, IconPrompt } from '@tabler/icons';
 import { AppShell, Header, Group, ActionIcon, useMantineColorScheme, UnstyledButton, Title, Button, Space } from '@mantine/core';
+import Home from './pages/Home';
+import Projects from './pages/Projects';
 
 export default function WebsiteContainer() {
     const { colorScheme, toggleColorScheme } = useMantineColorScheme();
@@ -17,7 +19,7 @@ export default function WebsiteContainer() {
               <Group sx={{ height: '100%' }} px={20} position="apart">
                 
                 <Group>
-                  <UnstyledButton onClick={() => {}}>
+                  <UnstyledButton component={Link} to='/'>
                     <Group position='center'>
                       <IconPrompt/>
                       <Title size={24}>Matthew Soulsby</Title>
@@ -26,10 +28,10 @@ export default function WebsiteContainer() {
                   
                   <Space w='md'/>
                   
-                  <Button variant="subtle">
+                  <Button variant="subtle" component={Link} to='/'>
                     Home
                   </Button>
-                  <Button variant="subtle">
+                  <Button variant="subtle" component={Link} to='/projects'>
                     Projects
                   </Button>
                 </Group>
@@ -48,7 +50,16 @@ export default function WebsiteContainer() {
             },
           })}
         >
-          Your application goes here
+          <Routes>
+            <Route
+              element={<Home/>}
+              path='/'
+            />
+            <Route
+              element={<Projects/>}
+              path='/projects'
+            />
+          </Routes>
         </AppShell>
       </BrowserRouter>
     );
