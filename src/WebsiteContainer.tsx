@@ -16,31 +16,33 @@ export default function WebsiteContainer() {
           fixed={false}
           header={
             <Header height={60}>
-              <Group sx={{ height: '100%' }} px={20} position="apart">
-                
-                <Group>
-                  <UnstyledButton component={Link} to='/'>
-                    <Group position='center'>
-                      <IconPrompt/>
-                      <Title size={24}>Matthew Soulsby</Title>
-                    </Group>
-                  </UnstyledButton>
+              <Container sx={{ height: '100%' }} size='lg'>
+                <Group sx={{ height: '100%' }} px={20} position="apart">
                   
-                  <Space w='md'/>
+                  <Group>
+                    <UnstyledButton component={Link} to='/'>
+                      <Group position='center'>
+                        <IconPrompt/>
+                        <Title size={24}>Matthew Soulsby</Title>
+                      </Group>
+                    </UnstyledButton>
+                    
+                    <Space w='md'/>
+                    
+                    <Button variant="subtle" component={Link} to='/'>
+                      Home
+                    </Button>
+                    <Button variant="subtle" component={Link} to='/projects'>
+                      Projects
+                    </Button>
+                  </Group>
                   
-                  <Button variant="subtle" component={Link} to='/'>
-                    Home
-                  </Button>
-                  <Button variant="subtle" component={Link} to='/projects'>
-                    Projects
-                  </Button>
-                </Group>
-                
-                <ActionIcon variant="default" onClick={() => toggleColorScheme()} size={30}>
-                  {colorScheme === 'dark' ? <IconSun size={16} /> : <IconMoonStars size={16} />}
-                </ActionIcon>
+                  <ActionIcon variant="default" onClick={() => toggleColorScheme()} size={30}>
+                    {colorScheme === 'dark' ? <IconSun size={16} /> : <IconMoonStars size={16} />}
+                  </ActionIcon>
 
-              </Group>
+                </Group>
+              </Container>
             </Header>
           }
           styles={(theme) => ({
