@@ -1,8 +1,8 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { Routes, Route, Link, HashRouter } from "react-router-dom";
 import './App.css';
 import { IconSun, IconMoonStars, IconPrompt } from '@tabler/icons';
-import { AppShell, Header, Group, ActionIcon, useMantineColorScheme, UnstyledButton, Title, Button, Space } from '@mantine/core';
+import { AppShell, Header, Group, ActionIcon, useMantineColorScheme, UnstyledButton, Title, Button, Space, Container } from '@mantine/core';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
 
@@ -10,7 +10,7 @@ export default function WebsiteContainer() {
     const { colorScheme, toggleColorScheme } = useMantineColorScheme();
   
     return (
-      <BrowserRouter>
+      <HashRouter>
         <AppShell
           padding="md"
           fixed={false}
@@ -50,17 +50,19 @@ export default function WebsiteContainer() {
             },
           })}
         >
-          <Routes>
-            <Route
-              element={<Home/>}
-              path='/'
-            />
-            <Route
-              element={<Projects/>}
-              path='/projects'
-            />
-          </Routes>
+          <Container size='lg'>
+            <Routes>
+              <Route
+                element={<Home/>}
+                path='/'
+              />
+              <Route
+                element={<Projects/>}
+                path='/projects'
+              />
+            </Routes>
+          </Container>
         </AppShell>
-      </BrowserRouter>
+      </HashRouter>
     );
 }
