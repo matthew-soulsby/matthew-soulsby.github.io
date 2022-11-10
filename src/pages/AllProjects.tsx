@@ -1,5 +1,5 @@
 import React from 'react';
-import { Title, Divider, Text, Space, Stack } from '@mantine/core';
+import { Title, Divider, Stack } from '@mantine/core';
 import Projects from './ProjectDetails';
 import ProjectCardStacked from '../components/ProjectCardStacked';
 
@@ -10,7 +10,7 @@ export default function AllProjects() {
         <Divider my="md"/>
         <Stack>
             {Projects.map((project) => {
-                    return <ProjectCardStacked {...project} />
+                return <ProjectCardStacked {...project} />
             })}
         </Stack>
         </>
