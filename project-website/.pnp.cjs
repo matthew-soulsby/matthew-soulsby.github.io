@@ -42,6 +42,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["embla-carousel-react", "virtual:29bfc84c6cf9552ef92f87cdd1632dbfcead2a0f84c22498d92d476c01df99f5990c798c325bce7ddcd9d04aa5b12cdda03727f35f0bf3567ba494311ca161cb#npm:7.0.5"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:29bfc84c6cf9552ef92f87cdd1632dbfcead2a0f84c22498d92d476c01df99f5990c798c325bce7ddcd9d04aa5b12cdda03727f35f0bf3567ba494311ca161cb#npm:18.2.0"],\
+            ["react-player", "virtual:29bfc84c6cf9552ef92f87cdd1632dbfcead2a0f84c22498d92d476c01df99f5990c798c325bce7ddcd9d04aa5b12cdda03727f35f0bf3567ba494311ca161cb#npm:2.11.0"],\
             ["react-router-dom", "virtual:29bfc84c6cf9552ef92f87cdd1632dbfcead2a0f84c22498d92d476c01df99f5990c798c325bce7ddcd9d04aa5b12cdda03727f35f0bf3567ba494311ca161cb#npm:6.4.3"],\
             ["react-scripts", "virtual:29bfc84c6cf9552ef92f87cdd1632dbfcead2a0f84c22498d92d476c01df99f5990c798c325bce7ddcd9d04aa5b12cdda03727f35f0bf3567ba494311ca161cb#npm:5.0.1"],\
             ["typescript", "patch:typescript@npm%3A4.8.4#~builtin<compat/typescript>::version=4.8.4&hash=701156"],\
@@ -12026,6 +12027,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["load-script", [\
+        ["npm:1.0.0", {\
+          "packageLocation": "./.yarn/cache/load-script-npm-1.0.0-32a3163a57-8458e3f07b.zip/node_modules/load-script/",\
+          "packageDependencies": [\
+            ["load-script", "npm:1.0.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["loader-runner", [\
         ["npm:4.3.0", {\
           "packageLocation": "./.yarn/cache/loader-runner-npm-4.3.0-9ca67df372-a90e00dee9.zip/node_modules/loader-runner/",\
@@ -12267,6 +12277,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["memfs", "npm:3.4.10"],\
             ["fs-monkey", "npm:1.0.3"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["memoize-one", [\
+        ["npm:5.2.1", {\
+          "packageLocation": "./.yarn/cache/memoize-one-npm-5.2.1-ee0f8be979-a3cba7b824.zip/node_modules/memoize-one/",\
+          "packageDependencies": [\
+            ["memoize-one", "npm:5.2.1"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -14982,6 +15001,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["embla-carousel-react", "virtual:29bfc84c6cf9552ef92f87cdd1632dbfcead2a0f84c22498d92d476c01df99f5990c798c325bce7ddcd9d04aa5b12cdda03727f35f0bf3567ba494311ca161cb#npm:7.0.5"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:29bfc84c6cf9552ef92f87cdd1632dbfcead2a0f84c22498d92d476c01df99f5990c798c325bce7ddcd9d04aa5b12cdda03727f35f0bf3567ba494311ca161cb#npm:18.2.0"],\
+            ["react-player", "virtual:29bfc84c6cf9552ef92f87cdd1632dbfcead2a0f84c22498d92d476c01df99f5990c798c325bce7ddcd9d04aa5b12cdda03727f35f0bf3567ba494311ca161cb#npm:2.11.0"],\
             ["react-router-dom", "virtual:29bfc84c6cf9552ef92f87cdd1632dbfcead2a0f84c22498d92d476c01df99f5990c798c325bce7ddcd9d04aa5b12cdda03727f35f0bf3567ba494311ca161cb#npm:6.4.3"],\
             ["react-scripts", "virtual:29bfc84c6cf9552ef92f87cdd1632dbfcead2a0f84c22498d92d476c01df99f5990c798c325bce7ddcd9d04aa5b12cdda03727f35f0bf3567ba494311ca161cb#npm:5.0.1"],\
             ["typescript", "patch:typescript@npm%3A4.8.4#~builtin<compat/typescript>::version=4.8.4&hash=701156"],\
@@ -15281,6 +15301,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["react-fast-compare", [\
+        ["npm:3.2.0", {\
+          "packageLocation": "./.yarn/cache/react-fast-compare-npm-3.2.0-fbfa6627d9-8ef272c825.zip/node_modules/react-fast-compare/",\
+          "packageDependencies": [\
+            ["react-fast-compare", "npm:3.2.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["react-is", [\
         ["npm:16.13.1", {\
           "packageLocation": "./.yarn/cache/react-is-npm-16.13.1-a9b9382b4f-f7a19ac349.zip/node_modules/react-is/",\
@@ -15300,6 +15329,33 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/react-is-npm-18.2.0-0cc5edb910-e72d0ba81b.zip/node_modules/react-is/",\
           "packageDependencies": [\
             ["react-is", "npm:18.2.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["react-player", [\
+        ["npm:2.11.0", {\
+          "packageLocation": "./.yarn/cache/react-player-npm-2.11.0-6aa49a19e8-2ee0271b3a.zip/node_modules/react-player/",\
+          "packageDependencies": [\
+            ["react-player", "npm:2.11.0"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:29bfc84c6cf9552ef92f87cdd1632dbfcead2a0f84c22498d92d476c01df99f5990c798c325bce7ddcd9d04aa5b12cdda03727f35f0bf3567ba494311ca161cb#npm:2.11.0", {\
+          "packageLocation": "./.yarn/__virtual__/react-player-virtual-adea4977c7/0/cache/react-player-npm-2.11.0-6aa49a19e8-2ee0271b3a.zip/node_modules/react-player/",\
+          "packageDependencies": [\
+            ["react-player", "virtual:29bfc84c6cf9552ef92f87cdd1632dbfcead2a0f84c22498d92d476c01df99f5990c798c325bce7ddcd9d04aa5b12cdda03727f35f0bf3567ba494311ca161cb#npm:2.11.0"],\
+            ["@types/react", "npm:18.0.25"],\
+            ["deepmerge", "npm:4.2.2"],\
+            ["load-script", "npm:1.0.0"],\
+            ["memoize-one", "npm:5.2.1"],\
+            ["prop-types", "npm:15.8.1"],\
+            ["react", "npm:18.2.0"],\
+            ["react-fast-compare", "npm:3.2.0"]\
+          ],\
+          "packagePeers": [\
+            "@types/react",\
+            "react"\
           ],\
           "linkType": "HARD"\
         }]\
