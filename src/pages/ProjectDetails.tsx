@@ -45,7 +45,7 @@ const scrabble: Project = {
     id: 1,
     title: 'C++ Scrabble',
     header_image: '/scrabble-c++/Scrabble-Board',
-    description: 'A multiplayer game of Scrabble developed in a group through GitHub, run in the terminal, written in C++, complete with dictionary checking and other forms of input validation, along with recursive word scoring.',
+    description: "A multiplayer game of Scrabble developed in a group through GitHub, run in the terminal, written in C++, complete with dictionary checking and other forms of input validation, along with recursive word scoring. As RMIT does not permit the sharing of source code for university projects, below are some videos and images of the game's functionality.",
     content: []
 }
 
@@ -53,7 +53,7 @@ const neighbourhood_doctors = {
     id: 2,
     title: 'Neighbourhood Doctors',
     header_image: '/flutter-doctor-aws/Homepage',
-    description:'A Flutter mobile app developed in a group through GitHub, using a Springboot backend to communicate with an SQL database, using token-based authentication and hashed passwords to ensure security.',
+    description:'A Flutter mobile app developed in a group through GitHub, using a Springboot backend to communicate with an SQL database, using token-based authentication and hashed passwords to ensure security. As RMIT does not permit the sharing of source code for university projects, below are some videos and images of interactions with the front-end creating change within the back-end.',
     content: []
 }
 
