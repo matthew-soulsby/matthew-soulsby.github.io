@@ -1,21 +1,35 @@
 {
   "files": {
     "main.css": "/static/css/main.073c9b0a.css",
-    "main.js": "/static/js/main.b96ba9a8.js",
+    "main.js": "/static/js/main.5555de3a.js",
     "static/js/787.9a23838e.chunk.js": "/static/js/787.9a23838e.chunk.js",
+    "static/media/Sign-Up-and-Log-In.mp4": "/static/media/Sign-Up-and-Log-In.de5f0cbff9db5b55a5fd.mp4",
+    "static/media/Post-Functions.mp4": "/static/media/Post-Functions.9671c5208ce18f72d601.mp4",
+    "static/media/Follow-User.mp4": "/static/media/Follow-User.dd5262fc15fb372fa060.mp4",
+    "static/media/Overview.mp4": "/static/media/Overview.acae83307fcc1adf08b2.mp4",
+    "static/media/Edit-and-Delete-Post.mp4": "/static/media/Edit-and-Delete-Post.2caa2025d3ae2f1744af.mp4",
+    "static/media/Text-Chat.mp4": "/static/media/Text-Chat.9ccbd1df2435b90e9d0b.mp4",
+    "static/media/Appointment-Booking.mp4": "/static/media/Appointment-Booking.fd2b4e8b02e8c7688e70.mp4",
+    "static/media/Create-and-Start-Game.mp4": "/static/media/Create-and-Start-Game.05e177570fa29843e804.mp4",
+    "static/media/Log-In.mp4": "/static/media/Log-In.98204770f49af2187919.mp4",
+    "static/media/Save-and-Load.mp4": "/static/media/Save-and-Load.ca4183294ada471e4127.mp4",
+    "static/media/Health-Status-and-Prescriptions.mp4": "/static/media/Health-Status-and-Prescriptions.c5963d8bf6b3bfea052e.mp4",
+    "static/media/Doctor-View.mp4": "/static/media/Doctor-View.635660da00605ff5ba88.mp4",
+    "static/media/Word-Validation.mp4": "/static/media/Word-Validation.62023c0fb5d372613c66.mp4",
+    "static/media/Make-and-Run.mp4": "/static/media/Make-and-Run.4c9411a302ae74ff6eca.mp4",
     "static/media/Home-Page.png": "/static/media/Home-Page.a3d8653998eae7c50058.png",
-    "static/media/Post Page.png": "/static/media/Post Page.f6167b9703e191e745b0.png",
+    "static/media/Post-Page.png": "/static/media/Post-Page.f6167b9703e191e745b0.png",
     "static/media/Logged-In.png": "/static/media/Logged-In.ca384a9b17e78aa1c753.png",
     "static/media/Homepage.png": "/static/media/Homepage.352d024dda4fb91c407b.png",
     "static/media/Scrabble-Board.png": "/static/media/Scrabble-Board.fa8c51b0f2d3ebb01d93.png",
     "static/media/Main-Menu.png": "/static/media/Main-Menu.aee7b2fbc193fa94c2ea.png",
     "index.html": "/index.html",
     "main.073c9b0a.css.map": "/static/css/main.073c9b0a.css.map",
-    "main.b96ba9a8.js.map": "/static/js/main.b96ba9a8.js.map",
+    "main.5555de3a.js.map": "/static/js/main.5555de3a.js.map",
     "787.9a23838e.chunk.js.map": "/static/js/787.9a23838e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.b96ba9a8.js"
+    "static/js/main.5555de3a.js"
   ]
 }
