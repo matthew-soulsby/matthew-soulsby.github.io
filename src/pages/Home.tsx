@@ -1,5 +1,5 @@
 import React from 'react';
-import { Title, Divider, Text, Space } from '@mantine/core';
+import { Title, Divider, Text, Space, AspectRatio } from '@mantine/core';
 import { Carousel } from '@mantine/carousel';
 import Projects from './ProjectDetails';
 import ProjectCard from '../components/ProjectCard';
@@ -27,13 +27,18 @@ export default function Home() {
         </Text>
         <Space h='md'/>
         <Title my='md' align='center' order={3}>Latest Projects</Title>
-        <Carousel my='md' slideSize="70%" height={600} slideGap="md">
-            {Projects.map((project) => {
-                return <Carousel.Slide key={project.title}>
-                    <ProjectCard {...project} />
-                </Carousel.Slide>
-            })}
-        </Carousel>
+        <AspectRatio ratio={1100 / 600}>
+            <Carousel slideSize="70%" slideGap="md">
+                {Projects.map((project, index) => {
+                    project.id = index;
+                    return (
+                    <Carousel.Slide key={index}>
+                        <ProjectCard {...project} />
+                    </Carousel.Slide>
+                    );
+                })}
+            </Carousel>
+        </AspectRatio>
         </>
     );
 }

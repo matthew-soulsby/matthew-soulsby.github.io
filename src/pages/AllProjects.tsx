@@ -9,8 +9,9 @@ export default function AllProjects() {
         <Title my='md' order={1}>Projects</Title>
         <Divider my="md"/>
         <Stack>
-            {Projects.map((project) => {
-                return <ProjectCardStacked {...project} />
+            {Projects.map((project, index) => {
+                project.id = index;
+                return <ProjectCardStacked {...project} key={index} />
             })}
         </Stack>
         </>

@@ -1,7 +1,7 @@
 import React from 'react';
-import { Paper, Image, Text, Space, Grid } from '@mantine/core';
+import { Paper, Image, Text, Space, Grid, AspectRatio } from '@mantine/core';
 import { Link } from 'react-router-dom';
-import Project from '../classes/ProjectClass';
+import { Project } from '../classes/ProjectType';
 
 export default function ProjectCardStacked(project: Project) {
   return (
@@ -11,12 +11,13 @@ export default function ProjectCardStacked(project: Project) {
     >
       <Grid align='center'>
         <Grid.Col span={6}>
-          <Image
-            fit='contain'
-            height={300}
-            src={require('../resources'+ project.header_image + '.png')}
-            alt={project.title}
-          />
+          <AspectRatio ratio={540 / 270}>
+            <Image
+              fit='contain'
+              src={require('../resources'+ project.header_image + '.png')}
+              alt={project.title}
+            />
+          </AspectRatio>
         </Grid.Col>
         <Grid.Col span={6}>
           <Text weight={500} children={project.title}/>
