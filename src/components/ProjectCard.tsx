@@ -7,7 +7,7 @@ export default function ProjectCard(project: Project) {
   return (
   <Card shadow="sm" p="lg" radius="md" withBorder
     component={Link}
-    to='/projects'
+    to={`/project/${project.id}`}
   >
     <Card.Section >
       <AspectRatio ratio={770/425}>

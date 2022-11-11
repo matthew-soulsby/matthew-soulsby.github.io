@@ -7,7 +7,7 @@ export default function ProjectCardStacked(project: Project) {
   return (
     <Paper shadow="xs" p="md" withBorder
     component={Link}
-    to='/projects'
+    to={`/project/${project.id}`}
     >
       <Grid align='center'>
         <Grid.Col span={6}>

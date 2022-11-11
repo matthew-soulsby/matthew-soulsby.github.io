@@ -7,7 +7,13 @@ const loop_agile_now: Project = {
     title: 'Loop Agile Now',
     header_image: '/react-forum/Home-Page',
     description: 'A React-based forum web application, using an express + sequelize backend to communicate with an SQL database, using token-based authentication and hashed passwords to ensure security',
-    content: []
+    content: [
+        {
+            type: 'video', media: '/react-forum/Overview', 
+            section_header: 'Overview', 
+            section_body: 'A video showcasing an overview of the Loop Agile Now forum.'
+        }
+    ]
 }
 
 const scrabble: Project = {

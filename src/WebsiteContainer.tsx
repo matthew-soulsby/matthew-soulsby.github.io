@@ -5,6 +5,7 @@ import { IconSun, IconMoonStars, IconPrompt } from '@tabler/icons';
 import { AppShell, Header, Group, ActionIcon, useMantineColorScheme, UnstyledButton, Title, Button, Space, Container } from '@mantine/core';
 import Home from './pages/Home';
 import AllProjects from './pages/AllProjects';
+import ProjectPage from './pages/ProjectPage';
 
 export default function WebsiteContainer() {
     const { colorScheme, toggleColorScheme } = useMantineColorScheme();
@@ -61,6 +62,10 @@ export default function WebsiteContainer() {
               <Route
                 element={<AllProjects/>}
                 path='/projects'
+              />
+              <Route
+                element={<ProjectPage/>}
+                path='/project/:id'
               />
             </Routes>
           </Container>
