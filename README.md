@@ -1,5 +1,6 @@
 # Project Website
-A ReactJS website hosting information about projects I have developed/taken part in
+A ReactJS website hosting information about projects I have developed/taken part in.
+<a href="https://matthew-soulsby.github.io/"> Click here to view the site. </a>
 
 ## Available Scripts
 
