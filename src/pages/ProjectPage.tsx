@@ -1,11 +1,8 @@
 import React from 'react';
-import { Title, Divider, Text, Space, AspectRatio, Image, Stack } from '@mantine/core';
-import { Carousel } from '@mantine/carousel';
+import { Title, Divider, Text, Image, Stack, Group } from '@mantine/core';
 import Projects from './ProjectDetails';
-import ProjectCard from '../components/ProjectCard';
 import { useParams } from 'react-router-dom';
 import { Project } from '../classes/ProjectType';
-import ReactPlayer from 'react-player/lazy';
 
 export default function ProjectPage() {
     let { id } = useParams();
@@ -24,31 +21,33 @@ export default function ProjectPage() {
         <>
         <Title my='md' order={1}>{project?.title}</Title>
         <Divider my="md"/>
-        <Stack>
+        <Text c="dimmed" children={project?.description}/>
+        <Stack spacing={75}>
         {project?.content.map((section, index) => {
             return(
-                    <React.Fragment key={index}>
-                    <Title my='md' order={3} children={section.section_header}/>
-                    {(section.type === 'video') ? 
-                        <video
-                            src={require('../resources' + section.media + '.mp4')}
-                            controls={true}
-                            height='auto'
-                            width='100%'
-                        />
-                        : 
-                        <></>
-                    }
-                    {(section.type === 'image') ? 
-                        <Image
-                            src={require('../resources'+ section.media + '.png')}
-                            alt={section.media}
-                        />
-                        : 
-                        <></>
-                    }
-                    <Text children={section.section_body}/>
-                    </React.Fragment>
+                    <Group key={index}>
+                        <Title my='md' order={3} children={section.section_header} sx={{width: '100%'}}/>
+                        {(section.type === 'video') ? 
+                            <video
+                                src={require('../resources' + section.media + '.mp4')}
+                                controls={true}
+                                height='auto'
+                                width='100%'
+                                
+                            />
+                            : 
+                            <></>
+                        }
+                        {(section.type === 'image') ? 
+                            <Image
+                                src={require('../resources'+ section.media + '.png')}
+                                alt={section.media}
+                            />
+                            : 
+                            <></>
+                        }
+                        <Text children={section.section_body}/>
+                    </Group>
             );
         })}
         </Stack>
